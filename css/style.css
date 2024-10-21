@@ -1,0 +1,238 @@
+/* General styles */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+
+}
+
+body {
+    max-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0; /* Optional background color for the entire page */
+}
+
+/* ---------------Container 1 ---------------*/
+/* ---------------Container 1 ---------------*/
+/* ---------------Container 1 ---------------*/
+
+
+.container-1 {
+    height: 25vh;
+    width: 100vw;
+    background-image: url('/images/background.jpg');
+    color: white;
+
+}
+
+.summary {
+    padding: 10px;
+}
+
+.container-1 h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.total-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.total-line p {
+    margin: 0;
+    font-size: 17px;
+}
+
+.total-line b:last-child {
+    font-weight: bold;
+}
+
+/* ---------------Container 2 ---------------*/
+/* ---------------Container 2 ---------------*/
+/* ---------------Container 2 ---------------*/
+
+
+
+.container-2 {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    height: 75vh;
+}
+
+.container-2 h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Payment method container */
+.payment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Styling for each payment option */
+.images-methods {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+    width: 120px;
+    height: 120px;
+    display: flex; /* Activamos flexbox */
+    flex-direction: column; /* Alineamos los elementos en columna */
+    justify-content: center; /* Centramos verticalmente */
+    align-items: center; /* Centramos horizontalmente */
+}
+
+.images-methods img {
+    max-width: 80px; /* Ajusta el tamaño máximo del ícono */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.images-methods:hover {
+    transform: scale(1.05);
+    border-color: #ff66b2; /* Border color on hover */
+}
+
+
+
+.images-methods h3 {
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Highlight selected payment method */
+.selected {
+    border-color: #ff66b2;
+}
+
+/* Card Info section */
+#card-info {
+    margin-top: 20px;
+}
+
+#card-info h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Styling for input fields */
+.input-card, .input-expiry, .input-security {
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-wrapper label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Tooltip Icon */
+.tooltip-icon {
+    background-color: #555;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.input-wrapper:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Need Help link */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
