@@ -75,14 +75,10 @@
         <div class="input-card">
             <label for="card-number">Card Number</label>
             <div class="input-wrapper">
-                <input type="text" id="card-number" placeholder="1234 1234 1234 1234">
-                <span class="tooltip-icon">?</span>
-                <div class="tooltip-text">
-                    Please enter the 16-digit number on your card.
-                </div>
-            </div>
+            <input type="text" id="card-number" placeholder="1234 1234 1234 1234" maxlength="16" pattern="\d{16}" title="Please enter exactly 16 digits">            </div>
         </div>
 
+        <div id="cards2" class="cards2">
 
         <div class="input-expiry">
             <label for="expiry-date">Expiry Date</label>
@@ -96,25 +92,19 @@
             <label for="security-code">Security Code</label>
             <div class="input-wrapper">
                 <input type="text" id="security-code" placeholder="CVV">
-                <span class="tooltip-icon">?</span>
-                <div class="tooltip-text">
-                    Please enter the 3-digit number on your card.
-                </div>
             </div>
+        </div>
+        
         </div>
 
       </div>
 
       <!-- BUY NOW -->
 
-      <div>
-
-        <button type="button">Buy Now</button>
-
-        <a href="">Need Help?</a>
-
-
-      </div>
+    <div class="buy-help-container">
+        <button class="buy-now-btn">Buy Now</button>
+        <a href="#" class="help-link">Need Help?</a>
+    </div>
 
     </section>
 
