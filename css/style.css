@@ -149,6 +149,8 @@ input:focus {
 .input-expiry, .input-security {
     flex: 1; /* Ajusta la proporción del espacio ocupado por cada input */
     position: relative;
+    white-space: nowrap; /* No permite saltos de línea */
+
 }
 
 /* Contenedor para el botón y el enlace */
