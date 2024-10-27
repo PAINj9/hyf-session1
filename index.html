@@ -76,11 +76,10 @@
         
         <label for="card-number">Card Number</label>
         <div class="input-wrappor">
-            <input type="text" id="card-number1" placeholder="1234 1234 1234 1234" maxlength="16" pattern="\d{16}" title="Please enter exactly 16 digits">
+            <input type="number" id="card-number1" placeholder="1234 1234 1234 1234" oninput="this.value = this.value.slice(0, 16)">
             <i class="fas fa-question-circle"></i>
-            
-            
         </div>
+        
         
 
         
@@ -90,9 +89,8 @@
         <div class="input-expiry">
             <label for="expiry-date">Expiry Date</label>
             <div class="input-wrapper">
-                <input type="text" id="expiry-date" placeholder="MM / YY " maxlength="4">
+                <input type="number" id="expiry-date" placeholder="MM / YY " oninput="this.value = this.value.slice(0, 4)">
                 <i class="fas fa-question-circle"></i>
-
             </div>
 
         </div>
@@ -100,7 +98,7 @@
         <div class="input-security">
             <label for="security-code">Security Code</label>
             <div class="input-wrapper">
-                <input type="text" id="security-code" placeholder="CVV" maxlength="3" >
+                <input type="number" id="security-code" placeholder="CVV" oninput="this.value = this.value.slice(0, 3)" >
                 <i class="fas fa-question-circle"></i>
 
             </div>
