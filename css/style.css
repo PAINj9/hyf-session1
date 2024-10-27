@@ -8,8 +8,8 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden; /* Evita cualquier desbordamiento horizontal */
-    background-color: #f7f8fa; /* Fondo claro */
+    overflow-x: hidden; 
+    background-color: #f7f8fa; 
 }
 
 body {
@@ -24,9 +24,9 @@ body {
 .container-1 {
     height: 25vh;
     width: 100%;
-    background-color: #4A90E2; /* Azul suave */
-    background-image: linear-gradient(315deg, #4A90E2 0%, #50E3C2 74%); /* Degradado en azul y verde agua */
-    color: white; /* Texto blanco */
+    background-color: #4A90E2;
+    background-image: linear-gradient(315deg, #4A90E2 0%, #50E3C2 74%); 
+    color: white; 
     justify-content: center;
     align-items: center;
 }
@@ -38,7 +38,7 @@ body {
 .container-1 h2 {
     text-align: center;
     font-size: 24px;
-    color: #ffffff; /* Texto blanco */
+    color: #ffffff; 
 }
 
 .total-line {
@@ -63,27 +63,25 @@ body {
     background-color: #f7f8fa; /* Fondo claro */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    height: 100vh; 
     display: flex;
     align-items: center;
-    flex-direction: column; /* Asegura que los elementos estén en columna */
+    flex-direction: column; 
 }
 
 .container-2 h2 {
     text-align: center;
     font-size: 24px;
-    color: #333333; /* Texto en gris oscuro */
+    color: #333; /* Texto en gris oscuro */
 }
 
-/* Payment method container */
 .payment {
     display: flex;
-    justify-content: center; /* Esto centrará el contenido horizontalmente */
-    align-items: center; /* Esto centrará el contenido verticalmente */
+    justify-content: center; /*  centrará el contenido horizontalmente */
+    align-items: center; /* centrará el contenido verticalmente */
     gap: 50px;
 }
 
-/* Styling for each payment option */
 .images-methods {
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -93,30 +91,30 @@ body {
     border: 2px solid transparent;
     width: 120px;
     height: 120px;
-    background-color: #ffffff; /* Fondo blanco para las opciones de pago */
+    background-color: #ffffff; /* Fondo blanco  */
 }
 
 .images-methods img {
-    max-width: 80px; /* Ajusta el tamaño máximo del ícono */
+    max-width: 80px; /*   tamaño máximo del ícono */
     height: auto;
     margin-bottom: 5px;
 }
 
 .images-methods:hover {
     transform: scale(1.05);
-    border-color: #50E3C2; /* Verde agua en hover */
+    border-color: #50E3C2; /* Verde agua */
 }
 
 .images-methods h3 {
     font-size: 16px;
-    color: #333333; /* Texto gris oscuro */
+    color: #333; /* Texto gris oscuro */
 }
 
 .cards2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px; /* Ajusta el espacio entre los campos */
+    gap: 20px; 
 }
 
 .cardinfo {
@@ -125,47 +123,87 @@ body {
     border-radius: 10px; /* Para suavizar las esquinas */
 }
 
-/* Estilos generales para los inputs */
 input {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
     display: inline-block;
-    border: 2px solid #ddd; /* Borde gris claro */
+    border: 2px solid #ddd; 
     border-radius: 8px;
     box-sizing: border-box;
     font-size: 16px;
     transition: border-color 0.3s ease;
-    background-color: #ffffff; /* Fondo blanco */
-    color: #333333; /* Texto gris oscuro */
+    background-color: #ffffff; 
+    color: #333333; 
 }
 
-/* Cambia el borde cuando el input está enfocado */
+
 input:focus {
-    border-color: #50E3C2; /* Borde verde agua al enfocar */
+    border-color: #50E3C2; 
     outline: none;
 }
 
 .input-expiry, .input-security {
-    flex: 1; /* Ajusta la proporción del espacio ocupado por cada input */
+    flex: 1; 
     position: relative;
-    white-space: nowrap; /* No permite saltos de línea */
+    white-space: nowrap; 
 
 }
 
-/* Contenedor para el botón y el enlace */
+.input-wrappor {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.input-wrappor input {
+    padding-right: 30px; /* Espacio para el ícono */
+}
+
+.input-wrappor i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    cursor: pointer;
+}
+
+.input-card {
+    width: 100%;
+}
+
+.input-wrapper {
+    width: 24vw;
+}
+
+
+
+.input-wrapper i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    cursor: pointer;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+
 .buy-help-container {
     display: flex;
-    flex-direction: column; /* Alinea los elementos en columna (uno debajo del otro) */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Espacio superior si se requiere separación del contenido anterior */
+    margin-top: 20px; 
 }
 
-/* Estilo del botón "Buy Now" */
 .buy-now-btn {
-    background-color: #4A90E2; /* Fondo azul */
-    color: white; /* Texto blanco */
+    background-color: #4A90E2;
+    color: white; 
     border: none;
     border-radius: 30px;
     padding: 15px 40px;
@@ -174,22 +212,21 @@ input:focus {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px; /* Añade espacio entre el botón y el enlace */
+    margin-bottom: 10px; 
 }
 
 .buy-now-btn:hover {
-    background-color: #357ABD; /* Azul más oscuro en hover */
+    background-color: #357ABD; 
     transform: scale(1.05);
 }
 
 .buy-now-btn:active {
-    background-color: #2C5C8B; /* Azul aún más oscuro al hacer clic */
+    background-color: #2C5C8B; 
     transform: scale(0.98);
 }
 
-/* Estilo del enlace "Need Help?" */
 .help-link {
-    color: #4A90E2; /* Azul claro */
+    color: #4A90E2; 
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -197,11 +234,74 @@ input:focus {
 }
 
 .help-link:hover {
-    color: #50E3C2; /* Verde agua en hover */
+    color: #50E3C2;
     transform: scale(1.05);
 }
 
 .help-link:active {
-    color: #357ABD; /* Azul más oscuro en clic */
+    color: #357ABD; 
     transform: scale(0.95);
+}
+
+
+@media (max-width: 430px) {
+
+    .container-1 {
+        overflow-x: hidden;
+    }
+
+    .cardinfo {
+        width: 80%;
+        border-radius: 10px; /* Para suavizar las esquinas */
+    }
+
+    .input-wrappor {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .input-wrappor input {
+        padding-right: 30px; /* Espacio para el ícono */
+    }
+    
+    .input-wrappor i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: gray;
+        cursor: pointer;
+    }
+
+    .input-card {
+        width: 100%;
+    }
+
+    .input-wrapper {
+        width: 37vw;
+    }
+
+
+    
+    .input-wrapper i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: gray;
+        cursor: pointer;
+    }
+
+    .input-wrapper {
+        position: relative;
+    }
+
+    
+
+    .cards2{
+        width: 100%;
+    }
+
+
 }

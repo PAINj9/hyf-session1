@@ -6,8 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/order.ico" type="image/x-icon">
+    <link rel="icon" href="images/hyf.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Order Summary</title>
@@ -72,18 +74,25 @@
 
         <h2>Card Info</h2>
         
-        <div class="input-card">
-            <label for="card-number">Card Number</label>
-            <div class="input-wrapper">
-            <input type="text" id="card-number" placeholder="1234 1234 1234 1234" maxlength="16" pattern="\d{16}" title="Please enter exactly 16 digits">            </div>
+        <label for="card-number">Card Number</label>
+        <div class="input-wrappor">
+            <input type="text" id="card-number1" placeholder="1234 1234 1234 1234" maxlength="16" pattern="\d{16}" title="Please enter exactly 16 digits">
+            <i class="fas fa-question-circle"></i>
+            
+            
         </div>
+        
+
+        
 
         <div id="cards2" class="cards2">
 
         <div class="input-expiry">
             <label for="expiry-date">Expiry Date</label>
             <div class="input-wrapper">
-                <input type="text" id="expiry-date" placeholder="MM / YY ">
+                <input type="text" id="expiry-date" placeholder="MM / YY " maxlength="4">
+                <i class="fas fa-question-circle"></i>
+
             </div>
 
         </div>
@@ -91,7 +100,9 @@
         <div class="input-security">
             <label for="security-code">Security Code</label>
             <div class="input-wrapper">
-                <input type="text" id="security-code" placeholder="CVV">
+                <input type="text" id="security-code" placeholder="CVV" maxlength="3" >
+                <i class="fas fa-question-circle"></i>
+
             </div>
         </div>
         
