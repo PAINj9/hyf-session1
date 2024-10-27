@@ -106,7 +106,7 @@ body {
 }
 
 .images-methods h3 {
-    font-size: 16px;
+    font-size: 15px;
     color: #333; /* Texto gris oscuro */
 }
 
@@ -282,8 +282,6 @@ input:focus {
         width: 37vw;
     }
 
-
-    
     .input-wrapper i {
         position: absolute;
         right: 10px;
@@ -296,8 +294,6 @@ input:focus {
     .input-wrapper {
         position: relative;
     }
-
-    
 
     .cards2{
         width: 100%;
